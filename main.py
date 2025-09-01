@@ -9,13 +9,6 @@ from geopy.geocoders import Nominatim
 
 load_dotenv()
 
-model = LiteLLMModel(
-    model_id="gemini/gemini-2.5-flash",
-    params={
-        "temperature": 0.0,
-    }
-)
-
 @tool
 def geolocation(city: str) -> dict:
     """Get geolocation for a city
@@ -38,6 +31,16 @@ def geolocation(city: str) -> dict:
 
 
 async def main():
+
+    model = LiteLLMModel(
+        model_id="gemini/gemini-2.5-flash",
+        params={
+            "temperature": 0.0,
+        }
+    )
+
+    # agent = Agent(model="amazon.nova-lite-v1:0")
+    # agent = Agent(model="anthropic.claude-sonnet-4-20250514-v1:0")
 
     agent = Agent(
         model=model,
