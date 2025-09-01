@@ -1,4 +1,4 @@
-# AGENT-AI
+# AGENT-IA
 
 Ensaio para testar agentes de IA usando o strands.
 
@@ -17,7 +17,7 @@ Antes de executar o projeto, certifique-se de ter os seguintes pré-requisitos:
 1. Clone o repositório para sua máquina local:
 
    ```bash
-   git clone https://github.com/gapfranco/agent-ai.git
+   git clone https://github.com/gapfranco/agent-ia.git
    cd agent-ia
    ```
 
