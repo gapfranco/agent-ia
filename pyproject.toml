@@ -1,0 +1,13 @@
+[project]
+name = "agent-ia"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "python-dotenv>=1.1.1",
+    "strands-agents[litellm]>=1.6.0",
+    "strands-agents-tools>=0.2.5",
+    "streamlit>=1.49.1",
+    "geopy>=2.4.1",
+]
